@@ -8,13 +8,13 @@ public class EnemyDeath : MonoBehaviour
 
     private void Start()
     {
-        Death();
+        //Death();
     }
 
     public void Death()
     {
         GameObject newXpPoint = Instantiate(xpPoint, gameObject.transform.position, Quaternion.identity);
-        newXpPoint.GetComponent<ExpStats>().SetXpAmount(5);
+        newXpPoint.GetComponent<XpStats>().SetXpAmount(5);
         Destroy(gameObject);
     }
 }

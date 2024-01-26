@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExpStats : MonoBehaviour
+public class XpStats : MonoBehaviour
 {
     float xpAmount;
 

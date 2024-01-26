@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float currHealth;
     [SerializeField] private float maxHealth;
+    [SerializeField] private float currHealth;
     [Header("Speed")]
     [SerializeField] private float speed;
     [Header("Attack")]
@@ -26,4 +26,8 @@ public class EnemyStats : MonoBehaviour
 
     public int GetAttackDamage() {  return attackDamage; }
 
+    private void Start()
+    {
+        currHealth = maxHealth;
+    }
 }

@@ -10,12 +10,13 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
     float moveLimiter = 0.7f;
 
-    [SerializeField] float playerSpeed = 10f;
+    private PlayerStats playerStats;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerStats = GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,6 @@ public class PlayerMovement : MonoBehaviour
             vertical *= moveLimiter;
         }
 
-        rb.velocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
+        rb.velocity = new Vector2(horizontal * playerStats.GetSpeed(), vertical * playerStats.GetSpeed());
     }
 }

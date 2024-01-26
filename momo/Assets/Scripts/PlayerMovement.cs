@@ -8,13 +8,14 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontal;
     float vertical;
+    float moveLimiter = 0.7f;
 
     [SerializeField] float playerSpeed = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,11 +23,17 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        rb.velocity = new Vector2(horizontal * playerSpeed * Time.deltaTime, vertical * playerSpeed * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
-        
+        if (horizontal != 0 && vertical != 0) // Check for diagonal movement
+        {
+            // limit movement speed diagonally, so you move at 70% speed
+            horizontal *= moveLimiter;
+            vertical *= moveLimiter;
+        }
+
+        rb.velocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
     }
 }

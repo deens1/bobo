@@ -10,8 +10,11 @@ public class UpdateStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        //statValue.text = PlayerStats.maxHealth.ToString();
+        UpdateAllStats();
+    }
+    
+    public void UpdateAllStats()
+    {
         foreach (var stat in gameObject.GetAllChilds())
         {
             Debug.Log(stat);
@@ -31,12 +34,6 @@ public class UpdateStats : MonoBehaviour
                 statValueTMP.text = PlayerStats.size.ToString();
             }
         }
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
 

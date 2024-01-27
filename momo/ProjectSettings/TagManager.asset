@@ -6,6 +6,9 @@ TagManager:
   tags:
   - HealthBar
   - xp
+  - speedStat
+  - healthStat
+  - sizeStat
   layers:
   - Default
   - TransparentFX

@@ -5,13 +5,15 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float currHealth;
-    [SerializeField] private float maxHealth;
+    [SerializeField] public float currHealth;
+    [SerializeField] public static float maxHealth = 100f;
     [Header("Speed")]
-    [SerializeField] private float speed;
+    [SerializeField] public static float speed = 10;
     [Header("Xp")]
-    [SerializeField] private float currXp;
-    [SerializeField] private float xpToLevelUp;
+    [SerializeField] public static float currXp;
+    [SerializeField] public static float xpToLevelUp;
+    [Header("Model")]
+    [SerializeField] public static float size = 1;
 
     private void Start()
     {
@@ -30,9 +32,9 @@ public class PlayerStats : MonoBehaviour
 
     public void SetCurrHealth(float currHealth) { this.currHealth = currHealth; }
 
-    public void SetMaxHealth(float maxHealth) { this.maxHealth = maxHealth; }
+    //public void SetMaxHealth(float maxHealth) { this.maxHealth = maxHealth; }
 
-    public void SetSpeed(float speed) { this.speed = speed; }
+    //public void SetSpeed(float speed) { this.speed = speed; }
 
     public void AddXp(float xp)
     {

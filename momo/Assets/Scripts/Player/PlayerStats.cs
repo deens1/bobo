@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public float currHealth;
     [SerializeField] public static float maxHealth = 100f;
     [Header("Speed")]
-    [SerializeField] public static float speed = 10;
+    [SerializeField] public static float speed = 4;
     [Header("Xp")]
     [SerializeField] public static float currXp;
     [SerializeField] public static float xpToLevelUp;

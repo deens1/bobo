@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bow : MonoBehaviour
+public class Bow1 : MonoBehaviour
 {
     [SerializeField] private float damage;
-    [SerializeField] private float travelSpeed;
+    [SerializeField] private float velocity;
     [SerializeField] private float attacksPerSecond;
     [SerializeField] public float arrowLifetime = 2f;
     private float arrowTimer = 0f;
@@ -31,7 +31,7 @@ public class Bow : MonoBehaviour
             arrowClone.transform.rotation = Quaternion.Euler(0, 0, angle);
 
             // Set the arrow's velocity
-            arrowClone.GetComponent<Rigidbody2D>().velocity = arrowClone.transform.right * travelSpeed;
+            arrowClone.GetComponent<Rigidbody2D>().velocity = arrowClone.transform.right * velocity;
 
             // Set the arrow's lifetime
             Destroy(arrowClone, arrowLifetime);

@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private float damage;
-    [SerializeField] private float attacksPerSecond;
+    [SerializeField] public float damage;
+    [SerializeField] public float attacksPerSecond;
     
-}
-public class Sword : Weapon
-{
-    // Specific properties and methods for swords
 }
 
 public class Bow : Weapon

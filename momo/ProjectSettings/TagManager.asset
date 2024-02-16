@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - HealthBar
-  - xp
   - speedStat
   - healthStat
   - sizeStat
+  - PauseMenu
+  - Enemy
+  - Exp
+  - ExpBar
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BackgroundParticles
   - Water
   - UI
   - 
@@ -25,8 +28,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Lightning Post
+  - post
   - 
   - 
   - 
@@ -45,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: backgroundParticles
+    uniqueID: 836720287
     locked: 0

@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 133680709789416267}
   - component: {fileID: -3266343496607573050}
   - component: {fileID: -387635768804993048}
-  - component: {fileID: 8113440761084262258}
+  - component: {fileID: 2117208956208121937}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,16 +195,26 @@ MonoBehaviour:
   attackCooldown: 0.3
   attackRange: 2
   attackDamage: 5
---- !u!114 &8113440761084262258
-MonoBehaviour:
+  expAmount: 10
+  expPoint: {fileID: 5582865463878266954, guid: 3996339841fd34f41accaba0df207738, type: 3}
+--- !u!95 &2117208956208121937
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829298268109761183}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 233b0508724b29b45a63c26f117caf2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xpPoint: {fileID: 5582865463878266954, guid: 3996339841fd34f41accaba0df207738, type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cdc621fd3e8b59941b07f55dd0973409, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3341883881992130739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910260088774617898, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_Name
+      value: LightningWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -8470290596347335574, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+    - {fileID: 4141449789068850606, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+    - {fileID: 8100038504316973883, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5967168506585601620}
+  m_SourcePrefab: {fileID: 100100000, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+--- !u!1 &5363513709477228855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
+  m_PrefabInstance: {fileID: 3341883881992130739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5967168506585601620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5363513709477228855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337d250a85e3885488d814427400c359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  attacksPerSecond: 2
+  lifetime: 2
+  lightningPrefab: {fileID: 7210200204487516548, guid: a55ec520eecf57d40bd9ed2840639693, type: 3}
